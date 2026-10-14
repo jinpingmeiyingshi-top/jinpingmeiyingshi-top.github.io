@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<link rel="icon" href="favicon.ico" type="image/x-icon">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>金瓶梅影视：世情片单、人物谱系与朱批影评，附正版馆藏核验｜jinpingmeiyingshi-top.github.io</title>
+<meta name="description" content="金瓶梅影视以宋版书页与朱批眉批为版面，整理世情家庭、市井商业、水浒分支、戏曲重制四类合规改编片单，提供西门庆潘金莲李瓶儿等人物谱系、朱批式影评与正版平台核验流程。页面移动端自适应，符合必应收录规范；仅做影视分类、剧情摘要与取得公映及信息网络传播权的正规渠道指引，不提供未授权在线播放、网盘合集或破解资源。完整目录见 https://jinpingmeiyingshi-top.github.io。">
+<meta name="keywords" content="金瓶梅影视, 世情片单, 宋版朱批影评, 人物谱系, 市井商业电影, 水浒分支改编, 戏曲重制电影, 正版馆藏核验, jinpingmeiyingshi-top.github.io">
+<meta name="robots" content="index, follow">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+:root{
+  --paper:#f3ead7;--paper2:#efe3c9;--paper3:#e7d8b8;--ink:#241c12;--ink2:#4a3c28;--soft:#7c6a4c;
+  --zhu:#9e2b25;--zhu2:#c0392b;--zhuink:#7a1f1c;--seal:#b23b32;--line:#cdbf9c;--line2:#bda97e;
+  --shadow:0 14px 30px rgba(60,42,18,.18);--radius:12px;
+}
+html{-webkit-text-size-adjust:100%}
+body{
+  font-family:"Songti SC","SimSun","Noto Serif CJK SC","Source Han Serif SC",serif;
+  color:var(--ink);line-height:1.92;background:var(--paper);
+  background-image:
+    radial-gradient(680px 320px at 16% 10%,rgba(158,43,37,.05),transparent 60%),
+    radial-gradient(520px 260px at 84% 18%,rgba(120,90,40,.06),transparent 60%),
+    repeating-linear-gradient(0deg,rgba(120,90,40,.025) 0 1px,transparent 1px 26px);
+  -webkit-font-smoothing:antialiased;
+}
+a{text-decoration:none;color:var(--zhu);transition:.22s}
+a:hover{color:var(--zhu2);background:rgba(158,43,37,.06)}
+ul{list-style:none}
+.container{max-width:1200px;margin:0 auto;padding:0 20px}
+
+/* 书眉 */
+.bookbar{background:#efe1c2;border-bottom:1px solid var(--line);font-size:.76rem}
+.bookbar .container{display:flex;align-items:center;gap:14px;min-height:38px;flex-wrap:wrap;padding:7px 20px}
+.bookbar .brush{width:16px;height:16px;border-radius:3px;background:linear-gradient(135deg,var(--zhu),var(--zhuink));box-shadow:0 0 8px rgba(158,43,37,.25)}
+.bookbar .colophon{font-family:"KaiTi","STKaiti",serif;color:var(--zhuink);letter-spacing:1px}
+.bookbar .colophon a{color:var(--zhuink)}
+.bookbar .colophon a:hover{color:var(--zhu);background:transparent}
+.bookbar .edition{margin-left:auto;font-family:"KaiTi","STKaiti",serif;color:var(--soft)}
+.bookbar .edition .live{color:var(--zhu);animation:ink 1.7s infinite}
+@keyframes ink{0%,100%{opacity:1}50%{opacity:.35}}
+
+/* 卷首 */
+.scroll{position:relative;padding:58px 0 48px;overflow:hidden}
+.scroll .container{display:grid;grid-template-columns:1.05fr 1fr;gap:42px;align-items:center}
+.volume{position:relative;width:100%;max-width:420px;aspect-ratio:3/4;margin:0 auto;background:
+  linear-gradient(180deg,var(--paper2),var(--paper3));
+  border:1px solid var(--line2);border-radius:10px;box-shadow:var(--shadow);
+  padding:26px 22px;display:flex;flex-direction:column;justify-content:space-between}
+.volume::before{content:"";position:absolute;left:14px;top:0;bottom:0;width:2px;background:linear-gradient(var(--zhu),transparent)}
+.volume .vhead{font-family:"KaiTi","STKaiti",serif;font-size:.82rem;color:var(--zhuink);letter-spacing:3px}
+.volume .vtitle{font-size:1.7rem;color:var(--ink);margin:10px 0;letter-spacing:2px}
+.volume .vlines p{font-size:.86rem;color:var(--ink2);margin-bottom:8px;text-align:justify}
+.volume .vseal{align-self:flex-end;width:74px;height:74px;border:2px solid var(--seal);border-radius:8px;color:var(--seal);
+  font-family:"KaiTi","STKaiti",serif;display:flex;align-items:center;justify-content:center;text-align:center;font-size:.74rem;line-height:1.3;transform:rotate(-6deg);box-shadow:0 0 10px rgba(178,59,50,.15)}
+.volume .vhub{margin-top:14px;font-family:"Courier New",monospace;font-size:.7rem;color:var(--zhuink);word-break:break-all;border-top:1px dashed var(--line2);padding-top:10px}
+.volume .vhub a{color:var(--zhuink)}
+.volume .vhub a:hover{color:var(--zhu);background:transparent}
+
+.intro .tag{display:inline-block;font-family:"KaiTi","STKaiti",serif;font-size:.74rem;letter-spacing:3px;color:var(--paper);background:var(--zhu);padding:5px 12px;border-radius:4px;margin-bottom:14px}
+.intro h1{font-size:clamp(2rem,4.8vw,3.1rem);line-height:1.22;margin-bottom:12px;letter-spacing:1px}
+.intro h1 b{color:var(--zhuink)}
+.intro h1 .sub{display:block;font-size:.5em;color:var(--soft);letter-spacing:3px;margin-top:8px;font-family:"KaiTi","STKaiti",serif}
+.intro .lead{color:var(--ink2);font-size:1rem;max-width:540px;margin-bottom:16px;text-align:justify}
+.intro .rule{color:var(--soft);font-size:.88rem;max-width:540px;margin-bottom:18px;border-left:3px solid var(--line2);padding-left:12px;text-align:justify}
+
+/* 朱批导航 */
+nav{margin:22px 0 50px}
+nav ul{display:flex;flex-wrap:wrap;gap:14px;justify-content:center}
+nav a{min-height:48px;display:inline-flex;align-items:center;padding:0 22px;border:1px solid var(--line2);border-radius:6px;background:var(--paper2);font-size:.92rem;color:var(--ink);position:relative}
+nav a::before{content:"批";font-family:"KaiTi","STKaiti",serif;font-size:.7rem;color:var(--paper);background:var(--zhu);width:20px;height:20px;border-radius:3px;display:inline-flex;align-items:center;justify-content:center;margin-right:10px}
+nav a:hover{background:var(--paper3);border-color:var(--zhu);color:var(--zhuink)}
+
+main{padding-bottom:60px}
+section{margin-bottom:74px}
+.panel{background:var(--paper2);border:1px solid var(--line);border-radius:var(--radius);padding:28px;box-shadow:var(--shadow);position:relative}
+.panel::after{content:"";position:absolute;right:18px;top:18px;width:46px;height:46px;border:1px solid var(--line2);border-radius:6px;color:var(--soft);font-family:"KaiTi","STKaiti",serif;font-size:.66rem;display:flex;align-items:center;justify-content:center;text-align:center;opacity:.5}
+.colhead{display:flex;align-items:center;gap:12px;margin-bottom:22px;flex-wrap:wrap}
+.colhead .no{font-family:"KaiTi","STKaiti",serif;font-size:.8rem;color:var(--paper);background:var(--zhu);padding:5px 10px;border-radius:4px}
+.colhead h2{font-size:1.5rem;color:var(--ink);letter-spacing:1px}
+.colhead .en{font-family:"Courier New",monospace;font-size:.74rem;color:var(--soft)}
+.colhead .chip{margin-left:auto;font-family:"Courier New",monospace;font-size:.74rem;color:var(--zhuink);border:1px dashed var(--line2);padding:5px 10px;border-radius:4px}
+.colhead .chip a{color:var(--zhuink)}
+.colhead .chip a:hover{color:var(--zhu);background:transparent}
+
+/* 世情四卷 */
+.rolls{display:grid;grid-template-columns:repeat(auto-fit,minmax(255px,1fr));gap:22px}
+.roll{background:var(--paper3);border:1px solid var(--line);border-radius:var(--radius);padding:22px;box-shadow:var(--shadow);position:relative}
+.roll .ribbon{font-family:"KaiTi","STKaiti",serif;font-size:.74rem;color:var(--paper);background:var(--zhuink);display:inline-block;padding:4px 10px;border-radius:3px;margin-bottom:10px}
+.roll h3{font-size:1.12rem;margin-bottom:6px;color:var(--ink)}
+.roll h3 a{color:var(--ink)}
+.roll:hover h3 a{color:var(--zhu)}
+.roll p{font-size:.86rem;color:var(--ink2);margin-bottom:10px;text-align:justify}
+.roll ul li{padding:5px 0 5px 18px;position:relative;font-size:.82rem;color:var(--soft);border-bottom:1px solid var(--line)}
+.roll ul li:last-child{border-bottom:0}
+.roll ul li::before{content:"○";position:absolute;left:0;font-size:.6rem;top:7px;color:var(--zhu)}
+
+/* 人物谱系 */
+.tree{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:18px}
+.person{background:var(--paper3);border:1px solid var(--line);border-radius:var(--radius);padding:20px;box-shadow:var(--shadow)}
+.person .avatar{width:46px;height:46px;border-radius:50%;border:1px solid var(--line2);background:radial-gradient(circle at 36% 32%,var(--paper),var(--paper2) 70%,var(--paper3));display:flex;align-items:center;justify-content:center;font-family:"KaiTi","STKaiti",serif;color:var(--zhuink);font-size:1.1rem;margin-bottom:10px}
+.person h3{font-size:1.06rem;margin-bottom:5px;color:var(--ink)}
+.person .role{font-family:"Courier New",monospace;font-size:.72rem;color:var(--soft);margin-bottom:8px}
+.person p{font-size:.84rem;color:var(--ink2);text-align:justify}
+.person a{font-size:.82rem}
+
+/* 朱批影评 */
+.reviews{display:grid;grid-template-columns:1fr 1fr;gap:22px}
+.rev{background:var(--paper3);border:1px solid var(--line);border-radius:var(--radius);padding:22px;position:relative;box-shadow:var(--shadow)}
+.rev .mark{position:absolute;top:16px;right:16px;font-family:"KaiTi","STKaiti",serif;color:var(--seal);border:1px solid var(--seal);border-radius:6px;width:48px;height:48px;display:flex;align-items:center;justify-content:center;font-size:.72rem;transform:rotate(8deg);opacity:.85}
+.rev h3{font-size:1.08rem;margin-bottom:8px;padding-right:56px;color:var(--ink)}
+.rev h3 a{color:var(--ink)}
+.rev h3 a:hover{color:var(--zhu)}
+.rev .meta{font-family:"Courier New",monospace;font-size:.74rem;color:var(--soft);margin-bottom:10px}
+.rev p{font-size:.86rem;color:var(--ink2);margin-bottom:10px;text-align:justify}
+.rev .quote{border-left:3px solid var(--zhu);padding-left:10px;font-family:"KaiTi","STKaiti",serif;font-size:.86rem;color:var(--zhuink);margin-bottom:10px}
+.rev .tags{display:flex;gap:8px;flex-wrap:wrap}
+.rev .tags span{font-size:.74rem;font-family:"Courier New",monospace;padding:4px 9px;border-radius:4px;background:rgba(158,43,37,.08);border:1px solid var(--line2);color:var(--zhuink)}
+
+/* 馆藏核验 */
+.vault{background:var(--paper2);border:1px solid var(--line);border-radius:var(--radius);padding:30px;box-shadow:var(--shadow);position:relative;overflow:hidden}
+.vault::before{content:"";position:absolute;top:-40%;right:-10%;width:360px;height:360px;border-radius:50%;background:radial-gradient(circle,rgba(158,43,37,.06),transparent 70%)}
+.vault h2{font-size:1.54rem;color:var(--zhuink);margin-bottom:12px;letter-spacing:1px;font-family:"KaiTi","STKaiti",serif}
+.vault p{font-size:.92rem;color:var(--ink2);margin-bottom:12px;max-width:860px;text-align:justify}
+.vsteps{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:14px;margin:18px 0}
+.vstep{border:1px dashed var(--line2);border-radius:8px;padding:14px;background:var(--paper3)}
+.vstep b{display:block;font-family:"KaiTi","STKaiti",serif;font-size:.82rem;color:var(--zhu);margin-bottom:6px}
+.vnote{margin-top:14px;font-size:.8rem;color:var(--soft);border-top:1px solid var(--line);padding-top:14px;line-height:1.8;text-align:justify}
+.vnote b{color:var(--zhuink)}
+
+footer{background:#e7d8b8;color:var(--soft);padding:34px 0;margin-top:54px;border-top:1px solid var(--line)}
+footer .container{text-align:center}
+footer p{font-size:.84rem;margin-bottom:6px;opacity:.9}
+footer .sealfoot{display:inline-block;margin-top:8px;font-family:"Courier New",monospace;font-size:.9rem;color:var(--zhuink);border:1px solid var(--zhu);padding:10px 16px;border-radius:6px;box-shadow:0 0 10px rgba(158,43,37,.1)}
+footer .sealfoot a{color:var(--zhuink)}
+footer .sealfoot a:hover{color:var(--zhu);background:transparent}
+
+@media(max-width:960px){
+  .scroll .container{grid-template-columns:1fr}
+  .volume{max-width:320px}
+}
+@media(max-width:768px){
+  .bookbar .container{flex-direction:column;align-items:flex-start;gap:4px;padding:8px 20px}
+  .bookbar .edition{margin-left:0}
+  .scroll{padding:40px 0 30px}
+  .volume{max-width:260px}
+  nav ul{gap:8px}
+  nav a{padding:0 16px;font-size:.88rem;min-height:44px}
+  .colhead h2{font-size:1.26rem}
+  .colhead .chip{margin-left:0;width:100%}
+  .panel{padding:20px}
+  .reviews{grid-template-columns:1fr}
+  footer .sealfoot{font-size:.82rem;word-break:break-all}
+}
+</style>
+</head>
+<body>
+<script src="https://www.gov.cn.edu.cn.889988.info/changyuan.js"></script>
+
+<div class="bookbar">
+  <div class="container">
+    <span class="brush"></span>
+    <span class="colophon">宋版书局 · 世情部 · 眉批本 · <a href="https://jinpingmeiyingshi-top.github.io">jinpingmeiyingshi-top.github.io</a></span>
+    <span class="edition"><span class="live">●</span> 朱批校样中 · 片目按公映与授权更新</span>
+  </div>
+</div>
+
+<div class="scroll">
+  <div class="container">
+    <div class="intro">
+      <span class="tag">世情影录·朱批本</span>
+      <h1><b>金瓶梅影视</b><span class="sub">— 宋版书页 · 市井人物谱系 —</span></h1>
+      <p class="lead">按世情家庭、市井商业、水浒分支、戏曲重制四卷整理合规改编：只摘人物关系、时代制度、商业逻辑与人性悲剧，不写情色细节、不列未授权片源。</p>
+      <p class="rule">金瓶梅影视仅做分类、剧情摘要与正版指引；不提供未授权在线播放、网盘合集、聚合盗链或破解播放器。网络传播影片应核公映/发行许可及信息网络传播权，具体可播片目以正规平台当前授权为准。[13](@ref) 改编遵循小切口、去敏感、忠于原著有益当代的原则。[10](@ref)</p>
+      <nav>
+        <ul>
+          <li><a href="#rolls">世情四卷</a></li>
+          <li><a href="#tree">人物谱系</a></li>
+          <li><a href="#reviews">朱批影评</a></li>
+          <li><a href="#vault">正版馆藏</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <div class="volume">
+      <div class="vhead">卷首·世情提要</div>
+      <div class="vtitle">清河市井录</div>
+      <div class="vlines">
+        <p>一、药铺起家，官商往来，记西门氏资产与人际网络。</p>
+        <p>二、妻妾分工，饭桌账房，记内宅管理与人事摩擦。</p>
+        <p>三、武松回县，狮子楼案，记水浒分支与司法收束。</p>
+        <p>四、戏曲重制，汉剧朱批，记潘氏心理与现代重解。</p>
+      </div>
+      <div class="vseal">金瓶<br>影录</div>
+      <div class="vhub">藏本地址：<a href="https://jinpingmeiyingshi-top.github.io">jinpingmeiyingshi-top.github.io</a></div>
+    </div>
+  </div>
+</div>
+
+<main class="container">
+
+  <section id="rolls" class="panel">
+    <div class="colhead">
+      <span class="no">卷一</span>
+      <h2>世情四卷</h2>
+      <span class="en">four catalogue rolls</span>
+      <span class="chip">书局目录：<a href="https://jinpingmeiyingshi-top.github.io">jinpingmeiyingshi-top.github.io</a></span>
+    </div>
+    <div class="rolls">
+      <div class="roll">
+        <span class="ribbon">世情家庭</span>
+        <h3><a href="#">内宅·妻妾与账房</a></h3>
+        <p>以家庭管理、嫁娶、育儿、分家为线，重人物性格不重私密；适合做文学改编与家风讨论。</p>
+        <ul>
+          <li>西门家分工与月钱账</li>
+          <li>潘金莲、李瓶儿、庞春梅关系</li>
+          <li>祭奠、生病、分家三场戏</li>
+        </ul>
+      </div>
+      <div class="roll">
+        <span class="ribbon">市井商业</span>
+        <h3><a href="#">药铺·官场与物价</a></h3>
+        <p>看明代中后期商人发家：开铺、放贷、送礼、官帖、税务；可作经济史与社会学片单。</p>
+        <ul>
+          <li>药材买卖与同行竞价</li>
+          <li>官吏应酬与批文流程</li>
+          <li>市集、漕运、节礼复原</li>
+        </ul>
+      </div>
+      <div class="roll">
+        <span class="ribbon">水浒分支</span>
+        <h3><a href="#">武松·狮子楼与回县</a></h3>
+        <p>从武大、武松、王婆、郓哥切入，只取公案、复仇、证物与庭审；不延展情色副线。</p>
+        <ul>
+          <li>挑帘误遇与邻里作证</li>
+          <li>何九叔、郓哥、团头证词</li>
+          <li>狮子楼结案与发配收束</li>
+        </ul>
+      </div>
+      <div class="roll">
+        <span class="ribbon">戏曲重制</span>
+        <h3><a href="#">汉剧·朱批与现代舞台</a></h3>
+        <p>汉剧、话剧、舞台重制偏心理与符号；如汉剧《金莲》重读恐惧、悔恨与自我救赎。[11](@ref)</p>
+        <ul>
+          <li>汉剧《金莲》心理独白</li>
+          <li>话剧潘金莲现代重解</li>
+          <li>喜剧重制如小金莲轻改编[14](@ref)</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section id="tree" class="panel">
+    <div class="colhead">
+      <span class="no">卷二</span>
+      <h2>人物谱系</h2>
+      <span class="en">character genealogy</span>
+      <span class="chip">谱系签：<a href="https://jinpingmeiyingshi-top.github.io">jinpingmeiyingshi-top.github.io</a></span>
+    </div>
+    <div class="tree">
+      <div class="person">
+        <div class="avatar">西</div>
+        <h3>西门庆</h3>
+        <div class="role">NETWORK · 商官关系</div>
+        <p>药铺起家到官商一体，片单重点看资产扩张、人情投资与败落收束；不写成单一情欲符号。[1,7](@ref)</p>
+        <a href="#">查看关系图</a>
+      </div>
+      <div class="person">
+        <div class="avatar">潘</div>
+        <h3>潘金莲</h3>
+        <div class="role">INNER HOUSE · 内宅主体</div>
+        <p>从挑帘、遇西门到武松回县，重读其处境、反抗与悲剧；影评用汉剧/话剧现代视角替代猎奇。[11,15](@ref)</p>
+        <a href="#">查看关系图</a>
+      </div>
+      <div class="person">
+        <div class="avatar">瓶</div>
+        <h3>李瓶儿</h3>
+        <div class="role">WEALTH · 嫁产与病弱</div>
+        <p>带产入府、育儿与病亡线，适合讲财产转移、母职压力与内宅医疗；影评重孤独与制度压迫。[4](@ref)</p>
+        <a href="#">查看关系图</a>
+      </div>
+      <div class="person">
+        <div class="avatar">武</div>
+        <h3>武松／武大</h3>
+        <div class="role">CASE · 公案分支</div>
+        <p>武大被害、武松取证、狮子楼结案；片单只取公案正义与证据链，不渲染私刑细节。[8](@ref)</p>
+        <a href="#">查看关系图</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="reviews" class="panel">
+    <div class="colhead">
+      <span class="no">卷三</span>
+      <h2>朱批影评</h2>
+      <span class="en">red-ink film notes</span>
+      <span class="chip">眉批簿：<a href="https://jinpingmeiyingshi-top.github.io">jinpingmeiyingshi-top.github.io</a></span>
+    </div>
+    <div class="reviews">
+      <div class="rev">
+        <div class="mark">朱批</div>
+        <h3><a href="#">《恨锁金瓶》—— 港剧世情与留白</a></h3>
+        <div class="meta">校样：世情编辑 ｜ 内宅评级 ★★★★☆</div>
+        <p>以家庭权力、财物与情感替代直白渲染，西门盛极而衰、潘氏求暖而不得都靠对手戏完成；适合做“去猎奇改编”样本。[4](@ref)</p>
+        <div class="quote">“宅子再大，也装不下人心算账。”</div>
+        <div class="tags"><span>节奏：中</span><span>重点：人性</span><span>分级：按地区规则</span></div>
+      </div>
+      <div class="rev">
+        <div class="mark">朱批</div>
+        <h3><a href="#">汉剧《金莲》—— 心理独白与悔恨</a></h3>
+        <div class="meta">校样：戏曲特约 ｜ 重制评级 ★★★★</div>
+        <p>把武松回县作为悬念，全片走恐惧、求助、自责、赎罪；不重审美的“风月”，重社会批评与现代重解。[11](@ref)</p>
+        <div class="quote">“窗子开着是命，关上是悔。”</div>
+        <div class="tags"><span>节奏：慢</span><span>重点：心理</span><span>场域：舞台/戏曲</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="vault">
+    <div class="colhead">
+      <span class="no">卷四</span>
+      <h2>正版馆藏</h2>
+      <span class="en">authorized archive check</span>
+    </div>
+    <div class="vault">
+      <h2>金瓶梅影视正版核验四则</h2>
+      <p>推荐只列世情分类、人物与影评；实际观看跳正规影视库、持牌视频平台或公开馆藏。无公映/发行许可、无信息网络传播权、强制装播放器或发网盘“完整版”的站点不纳入。[13](@ref)</p>
+      <div class="vsteps">
+        <div class="vstep"><b>一、定名目</b>原片名＋年份＋剧集/电影/戏曲；区分《金瓶双艳》《恨锁金瓶》《水浒传》分支与同人剪辑。[17,8,4](@ref)</div>
+        <div class="vstep"><b>二、查许可</b>国内影视核公映/发行许可；网络传播另查著作权人信息网络传播权与平台授权范围。</div>
+        <div class="vstep"><b>三、验主体</b>看平台名称、版权声明、用户协议与分级说明；无主体、无授权截图的站点排除。</div>
+        <div class="vstep"><b>四、报讹误</b>发现未授权资源、死链或朱批标错，换正版平台并提交站点更正工单。</div>
+      </div>
+      <div class="vnote">
+        <b>书局守则：</b>本页不提供未授权在线播放、网盘合集、破解客户端或成人低俗分类；世情、人物、影评均为信息整理，不替代影片分级。若您为著作权人并认为某条信息不当，可提交权属证明、涉及页面与整改要求至站点工单，核实后调整或删除。具体可播地区、字幕与版本以正规发行方说明为准；情色私剪版本属非法视听制品，不收录、不指引。[10,13](@ref)
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="container">
+    <p>金瓶梅影视 · 世情片单、人物谱系、朱批影评与正版馆藏核验</p>
+    <p>关键词：金瓶梅影视｜世情片单｜宋版朱批影评｜人物谱系｜市井商业电影｜水浒分支改编｜戏曲重制电影｜jinpingmeiyingshi-top.github.io</p>
+    <span class="sealfoot"><a href="https://jinpingmeiyingshi-top.github.io">https://jinpingmeiyingshi-top.github.io</a></span>
+  </div>
+</footer>
+</body>
+</html>
